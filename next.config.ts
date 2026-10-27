@@ -15,6 +15,20 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "fakeapi.net",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
